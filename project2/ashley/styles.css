@@ -1,0 +1,562 @@
+/* Outside Code Sources: ChatGPT, https://www.youtube.com/watch?v=ldwlOzRvYOU&pp=ygURcG9ydGZvbGlvIHdlYnNpdGU%3D */
+
+*{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+h3{
+    font-family: handsome-pro-rough, sans-serif;  
+}
+
+body{
+    background-color: #FAEFE6;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-family: gelica, sans-serif;;
+    color: black;
+    font-weight: 400;
+}
+
+a, .button {
+    transition: all 300ms ease;
+}
+
+nav, .navLinks {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: #FFC0BA;
+}
+
+.navLinks{
+    /* CITATION: */
+    gap: 32px;
+    list-style: none;
+    font-size: 24px;
+    font-family: gelica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+    color: #3F535A;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.logo{
+   max-height: 100px;
+}
+
+.logo:hover{
+    cursor: default
+}
+
+#hamburgerNav {
+    display: none;
+}
+
+.hamburgerMenu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburgerIcon{
+    cursor: pointer;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+}
+
+.hamburgerIcon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menuLinks {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color:white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menuLinks a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    font-family: gelica, sans-serif;
+}
+
+.menuLinks a:hover{
+    cursor: pointer;
+    color: #3F535A;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.menuLinks li {
+    list-style: none;
+}
+
+.menuLinks.open{
+    max-height: 300px;
+}
+
+.hamburgerIcon.open span:first-child{
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburgerIcon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburgerIcon.open span:last-child{
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburgerIcon span:first-child{
+    transform: none;
+}
+.hamburgerIcon span:first-child{
+    opacity: 1;
+}
+.hamburgerIcon span:first-child{
+    transform: none;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 140px; 
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.sectionContain{
+    display: flex;
+}
+
+#profile{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 50px 140px; 
+    height: 70vh;
+    border-radius: 50px;
+}
+
+.sectionPicContain {
+    display: flex;
+    height: 500px;
+    height: 500px;
+    margin: auto 0;
+}
+
+
+.sectionText{
+    align-self: center;
+    text-align: center;
+}
+
+.sectionTextp1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: gelica, sans-serif;
+}
+
+.sectionTextp2 {
+    color: #3F535A;
+    font-family: handsome-pro-rough, sans-serif;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.title {
+    color: #FFC0BA;
+    font-family: bely-display, sans-serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+#socialsContain{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.icon {
+    cursor: pointer;
+    height: 32px;
+}
+
+.buttonContain{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.button {
+    font-family: gelica, sans-serif;
+    font-weight: 200;
+    transition: all 300ms ease;
+    padding: 16px;
+    width: 140px;
+    border-radius: 32px;
+    font-size: 18px;
+}
+
+.buttonColor1, .buttonColor2 {
+    border: none;
+    background-color: #accbea;
+    color: #3F535A;
+}
+
+
+.buttonColor1:hover, .buttonColor2:hover{
+    cursor:pointer;
+    background-color: #3F535A;
+    color: rgb(172,203,234);
+}
+
+.buttonContain{
+    gap: 16px;
+}
+
+#about {
+    position: relative;
+    text-align: center;
+}
+
+.aboutPic{
+    display: flex;
+    border-radius: 25px;
+}
+
+#about h1{
+    margin-bottom: 20px;
+}
+
+#about .sectionContain{
+    background-color: white;
+}
+
+.aboutContains {
+    gap: 32px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+.aboutDetailsContain{
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.aboutContains, .aboutDetailsContain{
+    display: flex;
+}
+
+.detailsContain{
+    padding: 24px;
+    flex: 1;
+    background: #accbea;
+    border-radius: 32px;
+    text-align: center;
+    color: #3F535A;
+}
+
+
+#about .sectionContain{
+    border-radius: 50px;
+}
+
+.sectionContain {
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    height: 80%;
+}
+
+.sectionPicContain {
+    height: 400px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+#experience {
+    position: relative;
+}
+
+#experience .detailsContain{
+    background-color: white
+}
+
+#experience h3{
+    font-size: 22px;
+    font-family: gelica, sans-serif;
+    color:#3F535A;
+    font-weight: 200;
+}
+
+.experienceSubTitle {
+    font-family: handsome-pro-rough, sans-serif;
+    color: #3F535A;
+    font-weight: 100;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.experienceDetailsContain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about .icon{
+    background-color: white;
+    border-radius: 50px;
+}
+
+#experience .icon{
+    background-color: white;
+    border-radius: 50px;
+}
+.articleContain{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+article {
+    background-color: #accbea;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    width: 160px;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+article .icon{
+    cursor: default;
+}
+
+#projects {
+    position: relative;
+}
+
+.colorContain{
+    background: rgb(250, 250, 250);
+}
+
+.projectImg{
+    border-radius: 32px;
+    width: 90%;
+    height: 90%;
+}
+
+.projectTitle{
+    margin: 16px;
+    color: #3F535A;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.projectButton {
+    color: #3F535A;
+}
+
+.projectButton:hover{
+    color: #accbea;
+    background-color: #3F535A;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contactInfoUpperContain{
+    display: flex;
+    justify-content: center;
+    border-radius: 32px;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 32px auto;
+    padding: 8px;
+}
+
+.contactInfoContain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px;
+}
+
+.contactInfoContain p {
+    font-size: larger;
+}
+
+footer {
+    background-color: #FFC0BA;
+    height: 26vh;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+#about h3{
+    font-size: 42px;
+    color: #3F535A;
+    font-weight: 100;
+}
+
+#about .icon{
+    cursor: default;
+}
+
+
+@media (max-width: 1400px) {
+    #profile{
+        margin: 40px 120px; 
+        height: 83vh;
+    }
+    #profile .sectionText{
+        margin-top: 10px;
+    }
+    .aboutContains{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1200px) {
+    #desktopNav{
+        display: none;
+    }
+    #hamburgerNav{
+        display: flex;
+    }
+    #experience, .experienceDetailsContain{
+        margin-top: 32px;
+    }
+    #profile, .sectionContain{
+        display: block;
+    }
+    #profile{
+        height: 90vh;
+    }
+    .title{
+        font-size: 40px;
+    }
+    section, .sectionContain {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .sectionPicContain{
+        width: 275px;
+        height: 275px;
+        margin: auto;
+    }
+    #about .sectionContain{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionTextp2 {
+        font-size: 40px;
+    }
+    .aboutContains, .contactInfoUpperContain, .buttonContain {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        padding: auto 5px;
+        margin: 50px 40px; 
+        height: 83vh;
+    }
+    article {
+        font-size: 16px;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 32px;
+    }
+    .contactInfoContain {
+        padding: 5px;
+        margin: 0;
+    }
+    .contactInfoContain p, .navLinks li a{
+        font-size: 16px;
+    }
+    .experienceSubTitle{
+        font-size: 28px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .navLinks{
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+    .sectionPicContain{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .sectionTextp2 {
+        font-size: 26px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .textContain{
+        text-align: center;
+    }
+    #about .sectionContain{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Amelie Fawson | About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <section class="navbarnothome">
+        <nav>
+            <div class="logonav">
+                <a href="index.html"><img src="images/logo.png" alt="Amelie Fawson's logo, a fancy A and F"></a>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </section>
+
+    <div class="separator"></div>
+
+    <main>
+
+        <section class="about">
+
+            <div class="headshot">
+                <img src="images/headshot.jpeg" alt="A headshot of Amelie Fawson, she's smiling.">
+            </div>
+
+            <div class="biotext">
+
+                <p>Amelie Fawson is a multimedia journalist passionate about crafting stories that resonate across
+                    senses.
+                    As the Audio-Visual Assistant Editor at The Daily Tar Heel, she oversees a team of 18, shaping
+                    the creative direction of weekly video series and special projects. With experience as an audio
+                    reporter
+                    and podcast contributor, Amelie thrives at the intersection of audio, video and writing to deliver
+                    impactful narratives. During her time at The Watauga Democrat, she wrote over 65
+                    articles and captured photographs that illuminated local communities. With a strong foundation in AP
+                    Style, Adobe Premiere Pro and HTML/CSS, Amelie brings technical expertise and a deep commitment to
+                    storytelling.</p>
+
+                <button onclick="openModal()" class="openButton">View Resume</button>
+
+                <div id="modalContainer" class="modalBackground">
+                    <div class="modal">
+                        <div class="modalHeader">
+                            <button onclick="closeModal()" class="closeButton">X</button>
+                        </div>
+                        <div class="modalContent">
+                            <iframe src="images/resume.docx.pdf" frameborder="0" alt="Amelie Fawson's resume"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

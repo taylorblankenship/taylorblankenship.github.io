@@ -1,0 +1,341 @@
+/* General Body Styling */
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/backgroundhome.jpeg');
+    /* linear gradient from ChatGPT */
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+
+/* Nav Bar */
+
+.navbar {
+    margin: auto;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.navbarnothome {
+    margin: 30px;
+    text-align: center;
+}
+
+.navbarnothome a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbarnothome a:hover {
+    text-decoration: underline;
+}
+
+
+.logonav img {
+    width: 50px;
+    margin-bottom: 25px;
+}
+
+
+.separator {
+    background-color: rgb(255, 255, 255);
+    padding: .5px;
+    margin: 20px;
+}
+
+/* Home content */
+
+.homecontent {
+    margin-top: 190px;
+    text-align: center;
+    font-family: "Judson", serif;
+    color: white;
+
+}
+
+.homecontent h1 {
+    font-size: 60px;
+    margin-bottom: 2px;
+}
+
+.homecontent p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.homecontent img {
+    width: 80px;
+}
+
+#indexcontent {
+    position: fixed;
+    right: 50px;
+    left: 50px
+}
+
+
+/* Work Page */
+
+#gallery-container {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+#gallery-container div {
+    width: 250px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#picture-one {
+    background: url("images/dthlogo.jpg");
+    border-radius: 20px;
+}
+
+#picture-two {
+    background: url("images/muckrack.png");
+    border-radius: 20px;
+}
+
+#picture-three {
+    background: url("images/wataugademocrat.png");
+    border-radius: 20px;
+}
+
+#picture-four {
+    background: url("images/youtube.png");
+}
+
+#picture-five {
+    background: url("images/instagram.png");
+    border-radius: 40px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+figure a {
+    text-decoration: none;
+}
+
+
+figcaption {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+}
+
+figure a:hover figcaption {
+    text-decoration: underline;
+}
+
+/* About Page */
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+.headshot {
+    flex: 0 0 350px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.biotext {
+    background-color: rgba(255, 255, 255, 0.864);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.biotext p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.openButton {
+    margin-top: 20px;
+    background-color: rgb(241, 249, 255);
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Judson", serif;
+    border-radius: 5px;
+}
+
+.openButton:hover {
+    background-color: rgb(215, 234, 248);
+}
+
+.modalBackground {
+    display: none;
+    background: rgba(0, 0, 0, .65);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.784);
+    border-radius: 5px;
+    width: 800px;
+    height: 700px;
+}
+
+.closeButton {
+    margin: 15px 20px;
+    font-size: 24px;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: end;
+}
+
+iframe {
+    width: 700px;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+/* Contact Page */
+
+.googleform {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 30px;
+    width: 60%;
+    margin: 60px auto;
+    padding: 15px;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .headshot {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .headshot img {
+        width: 80%;
+        height: auto;
+    }
+
+    .biotext {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .biotext p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headshot img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        width: 90%;
+        height: 80%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        max-height: 80%;
+    }
+
+    .closeButton {
+        font-size: 20px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        width: 95%;
+        height: 75%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+        max-height: 70%;
+    }
+
+    .closeButton {
+        font-size: 18px;
+        margin: 5px;
+    }
+}

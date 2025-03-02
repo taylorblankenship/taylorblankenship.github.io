@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ashley Summers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pqi5vml.css">
+</head>
+
+<body>
+    <nav id="desktopNav">
+        <div class="logo">
+            <img src="logo.png" alt="My logo" class="logo">
+        </div>
+        <div>
+            <ul class="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburgerNav">
+        <div class="logo">
+            <img src="logo.png" alt="My logo" class="logo">
+        </div>
+        <div class="hamburgerMenu">
+            <div class="hamburgerIcon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menuLinks">
+                <li><a href="#about" onlick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onlick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onlick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onlick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="sectionPicContain">
+            <img src="picofme.png" alt="Profile Picture of Me" class="profilePic">
+        </div>
+        <div class="sectionText">
+            <p class="sectionTextp1">Hi, I'm</p>
+            <h1 class="title">Ashley Summers</h1>
+            <p class="sectionTextp2">clicks into connnections</p>
+            <div class="buttonContain">
+                <button class="button buttonColor2" onclick="window.open('AshleySummersResume.pdf', '_blank')">Download
+                    Resume</button>
+                <button class="button buttonColor1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socialsContain">
+                <img src="linkedin.png" alt="My LinkedIn profile." class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/ashleyesummers/'">
+                <img src="email.png" alt="My Email." class="icon" onclick="location.href='mailto:aesum@unc.edu.com'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="sectionTextp1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="sectionContain">
+            <div class="sectionPicContain">
+                <img src="picofme.jpg" alt="Profile picture." class="aboutPic">
+            </div>
+            <div class="aboutDetailsContain">
+                <div class="textContain">
+                    <h3>experience and education</h3>
+                </div>
+                <div class="aboutContains">
+                    <div class="detailsContain">
+                        <img src="experience.png" alt="Experience icon." class="icon">
+                        <p>2+ years as<br />Social Media Marketer</p>
+                    </div>
+                    <div class="detailsContain">
+                        <img src="education.png" alt="Education icon." class="icon">
+                        <p>Media and Journalism Major, B.A.<br /> UNC Chapel Hill Class of 2027</p>
+                    </div>
+                </div>
+                <div class="textContain">
+                    <p>Undergraduate student pursuing a journalism major with concentrations in advertising and public
+                        relations. Proven track record of success in various academic and professional roles, showcasing
+                        a strong
+                        work ethic and adaptability. Passion for creativity with a desire to contribute innovative ideas
+                        specifically
+                        within the fields of journalism and business. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="sectionTextp1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experienceDetailsContain">
+            <div class="aboutContains">
+                <div class="detailsContain">
+                    <h2 class="experienceSubTitle">social media management</h2>
+                    <div class="articleContain">
+                        <article>
+                            <img src="phone.png" alt="Phone icon" class="icon">
+                            <div>
+                                <h3>Instagram</h3>
+                                <p>Engaging visual content curation and community-building</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="phone.png" alt="Phone icon" class="icon">
+                            <div>
+                                <h3>Facebook</h3>
+                                <p>Strategic audience targeting and content management</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="phone.png" alt="Phone icon" class="icon">
+                            <div>
+                                <h3>TikTok</h3>
+                                <p>Trend-driven video creation and viral marketing</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="phone.png" alt="Phone icon" class="icon">
+                            <div>
+                                <h3>LinkedIn</h3>
+                                <p>Professional networking and thought leadership contents</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="detailsContain">
+                    <h2 class="experienceSubTitle">marketing techniques</h2>
+                    <div class="articleContain">
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Canva</h3>
+                                <p>Creative visual storytelling</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Adobe Suite</h3>
+                                <p>Professional-grade content creation</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Mailchimp</h3>
+                                <p>Dynamic email marketing campaigns</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Trello</h3>
+                                <p>Streamlined workflow coordination</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Attentive</h3>
+                                <p>Personalized SMS engagement strategies</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="computer.png" alt="Computer icon" class="icon">
+                            <div>
+                                <h3>Hootsuite</h3>
+                                <p>Comprehensive social media management</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="sectionTextp1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experienceDetailsContain">
+            <div class="aboutContains">
+                <div class="detailsContain colorContain">
+                    <div class="articleContain">
+                        <img src="asmrreel.png" alt="Reel" class="projectImg" />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">endorsed content</h2>
+                    <div class="buttonContain">
+                        <button class="button buttonColor2 projectButton"
+                            onclick="location.href='https://www.instagram.com/p/DCEsLT5OpYZ/'">ASMR Instagram
+                            Reel</button>
+                    </div>
+                </div>
+                <div class="detailsContain colorContain">
+                    <div class="articleContain">
+                        <img src="summer.png" alt="Graphic" class="projectImg" />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">graphic design</h2>
+                    <div class="buttonContain">
+                        <button class="button buttonColor2 projectButton"
+                            onclick="window.open('summer.png', '_blank')">Summer Promotional Instagram Graphic</button>
+                    </div>
+                </div>
+                <div class="detailsContain colorContain">
+                    <div class="articleContain">
+                        <img src="Black Friday-6.png" alt="Email" class="projectImg" />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">email design</h2>
+                    <div class="buttonContain">
+                        <button class="button buttonColor2 projectButton"
+                            onclick="window.open('Black Friday-6.png', '_blank')">Black Friday MailChimp Design</button>
+                    </div>
+                </div>
+                <div class="detailsContain colorContain">
+                    <div class="articleContain">
+                        <img src="Brand Kit.png" alt="Branding" class="projectImg" />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">branding</h2>
+                    <div class="buttonContain">
+                        <button class="button buttonColor2 projectButton"
+                            onclick="window.open('Brand Kit.png', '_blank')">Brand Identity Refresh</button>
+                    </div>
+                </div>
+                <div class="detailsContain colorContain">
+                    <div class="articleContain">
+                        <img src="ashnichole.png" alt="Reel" class="projectImg" />
+                    </div>
+                    <h2 class="experienceSubTitle projectTitle">video editing</h2>
+                    <div class="buttonContain">
+                        <button class="button buttonColor2 projectButton"
+                            onclick="location.href='https://www.instagram.com/reel/ChiGJXUlqzZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D'">Senior
+                            Shoot Instagram Reel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="sectionTextp1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contactInfoUpperContain">
+            <div class="contactInfoContain">
+                <img src="email.png" alt="My Email." class="icon" onclick="location.href='mailto:aesum@unc.edu.com'">
+                <p>aesum@unc.edu</p>
+            </div>
+            <div class="contactInfoContain">
+                <img src="linkedin.png" alt="My LinkedIn profile." class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/ashleyesummers/'">
+                <p>LinkedIn</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="navLinksContain">
+                <ul class="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ashley Summers. All Rights Reserved.</p>
+    </footer>
+    <script src=" script.js">
+    </script>
+</body>
+
+</html>
