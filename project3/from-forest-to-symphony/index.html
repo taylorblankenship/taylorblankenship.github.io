@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--I am sorry for the mess...I began to panic-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Dela+Gothic+One&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Racing+Sans+One&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>From Forest to Symphony</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="slide active" id="home">
+            <div class="pagecontent" id="homepagecontent">
+                <h1>From Forest to Symphony</h1>
+                <p class="subtitle">How a luthier transforms a cello from wood to instrument</p>
+                <div class="button-container">
+                    <button class="next">Next</button>
+                    <p class="attribution"><em>Background photo courtesy of K&M Music School</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="wood">
+            <h2>The Wood</h2>
+            <p class="pageSubtitle">A luthier is a maker of stringed instruments, including the cello. The journey of
+                crafting a cello begins with the careful selection of wood, a step
+                that influences the instrument's sound, durability, and aesthetic. Every piece of wood used by a luthier
+                in building a cello
+                serves a specific purpose, chosen with intention and precision.</p>
+            <div class="pagecontent">
+                <div class="wood-container">
+                    <!-- Wood Card for Maple -->
+                    <div class="wood-card" id="maple-card">
+                        <img src="images/maple.jpeg" alt="picture of a cut of Maple Wood">
+                        <button onclick="openPopup('maple')">Maple</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="maple-popup">
+                            <div class="popup-content">
+                                <img src="images/mapleuse.jpg" alt="a close-up picture of a cello from the bottom"
+                                    class="popup-img">
+                                <p>Maple is used for the cello's back and sides due to its strength and resonance
+                                    qualities.</p>
+                                <button class="close-btn" onclick="closePopup('maple')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wood Card for Spruce -->
+                    <div class="wood-card" id="spruce-card">
+                        <img src="images/spruce.jpeg" alt="picture of a cut of Spruce Wood">
+                        <button onclick="openPopup('spruce')">Spruce</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="spruce-popup">
+                            <div class="popup-content">
+                                <img src="images/spruceuse.jpeg" alt="picture of the front piece of a cello"
+                                    class="popup-img">
+                                <p>Spruce is chosen for the top plate because it provides great resonance and tonal
+                                    quality.</p>
+                                <button class="close-btn" onclick="closePopup('spruce')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wood Card for Ebony -->
+                    <div class="wood-card" id="ebony-card">
+                        <img src="images/ebony.jpeg" alt="a picture of a cut of Ebony Wood">
+                        <button onclick="openPopup('ebony')">Ebony</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="ebony-popup">
+                            <div class="popup-content">
+                                <img src="images/ebonyuse.jpeg" alt="a picture of a cello scroll" class="popup-img">
+                                <p>Ebony is used for the fingerboard and pegs due to its durability and smoothness.
+                                </p>
+                                <button class="close-btn" onclick="closePopup('ebony')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                    <p class="attribution"><em>Background photo courtesy of AllStar Ecology</em></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="carving">
+            <h2>Shaping the Body</h2>
+            <p class="pageSubtitle">Shaping the body of a cello is a meticulous process that transforms raw wood into a
+                resonant instrument. Precise tools and techniques are employed to ensure that every curve and joint
+                contributes
+                to the cello's tonal richness and structural integrity.</p>
+            <div class="pagecontent">
+                <div class="gif-container">
+                    <!-- Gif Card for Carving -->
+                    <div class="gif-card" id="carving-card">
+                        <img src="images/carvingone.gif" alt="A man carving the sides of a cello.">
+                        <button onclick="openPopup('carving')">Carving</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="carving-popup">
+                            <div class="popup-content">
+                                <img src="images/cellocarving.jpg"
+                                    alt="the front piece of a cello covered in wood shavings" class="popup-img">
+                                <p>A luthier must first carve the general shape of
+                                    the
+                                    cello.</p>
+                                <button class="close-btn" onclick="closePopup('carving')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gif Card for Drawing -->
+                    <div class="gif-card" id="drawing-card">
+                        <img src="images/drawing.gif" alt="A man outlining the base of a cello">
+                        <button onclick="openPopup('drawing')">Drawing</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="drawing-popup">
+                            <div class="popup-content">
+                                <img src="images/cellodrawing.jpg"
+                                    alt="a luthier working on a cello while a man sits in the back of the luthier shop playing the cello"
+                                    class="popup-img">
+                                <p>After carving the general body of the cello, the luthier refines the body's shape
+                                    using chalk or a pencil.</p>
+                                <button class="close-btn" onclick="closePopup('drawing')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gif Card for Gluing -->
+                    <div class="gif-card" id="gluing-card">
+                        <img src="images/gluing.gif" alt="A man gluing a cello together">
+                        <button onclick="openPopup('gluing')">Gluing</button>
+
+                        <!-- Popup Box -->
+                        <div class="popup" id="gluing-popup">
+                            <div class="popup-content">
+                                <img src="images/cellogluingtogether.jpg"
+                                    alt="a pot of glue used by luthiers with a hand dipping a brush in it"
+                                    class="popup-img">
+                                <p>Finally, the luthier glues the cello compartments together, holding them steady
+                                    with
+                                    clamps or pegs.</p>
+                                <button class="close-btn" onclick="closePopup('gluing')">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                    <p class="attribution"><em>Background photo courtesy of AllStar Ecology</em></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="slide" id="varnishing">
+            <h2>The Varnishing Process</h2>
+            <p class="pageSubtitle">The varnish not only enhances the cello's appearance but also protects the wood
+                from environmental
+                factors. There are two main types of varnish used by luthiers: oil-based and spirit-based, each
+                offering unique benefits.</p>
+            <div class="pagecontent">
+                <div class="varnish-columns">
+                    <div class="varnish-column">
+                        <img src="images/oilvarnish.jpg" alt="Oil-based varnish bottles">
+                        <figcaption>Oil-based varnish: Known for its deep color and rich finish, oil varnish enhances
+                            the natural grain of the wood.</figcaption>
+                    </div>
+                    <div class="varnish-column">
+                        <img src="images/spiritvarnish.jpg" alt="Spirit-based varnish bottles">
+                        <figcaption>Spirit-based varnish: Dries quickly and provides a hard, durable finish with a
+                            glossy appearance.</figcaption>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                    <p class="attribution">Background photo courtesy of Johnson String Insturment</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="stringing">
+            <h2>Stringing the Cello</h2>
+            <div class="pagecontent">
+                <div class="video-text-container">
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/G66H6yTtWpo?si=UTGrFZYLEOBV_1GU&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-container">
+                        <p>The final stage in the cello's creation involves stringing the instrument. Adjusting the
+                            tension of the strings is a delicate process, each adjusment drastically changes how the
+                            cello sounds. Video courtesy of DaddarioOrchestral.</p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                    <p class="attribution">Background photo courtesy of Ronald Sachs Violins</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="playing">
+            <div class="help">
+                <h2>The Cello: Completed</h2>
+                <p class="pageSubtitle">After months of careful craftsmanship, the cello is finally complete. From
+                    selecting
+                    the finest woods
+                    to the delicate shaping, varnishing, and stringing of the instrument, every step is essential in
+                    bringing a cello to life. With the cello now fully assembled, the true artistry of the luthier is
+                    revealed in the rich, expressive
+                    sound it produces.</p>
+                <div class="video-container">
+                    <figure>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/cNNR2v1jYBI?si=I-5NPf_c5l5fK3r7&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Rachmaninov - Cello Sonata in G minor, Op. 19 - Andante. Performed by Stéphane
+                            Tétreault
+                            (cello) and Marie-Ève Scarfone (piano)</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+                <p class="attribution">Background photo courtesy of New England Conservatory</p>
+            </div>
+        </section>
+
+        <section class="slide" id="sources">
+            <h2>Sources</h2>
+            <div class="pagecontent">
+                <div class="openmodalbutton">
+                    <button onclick="openModal()" class="openButton">View Sources</button>
+                </div>
+                <div id="modalContainer" class="modalBackground">
+                    <div class="modal">
+                        <div class="modalHeader">
+                            <button onclick="closeModal()" class="closeButton">X</button>
+                        </div>
+                        <div class="modalContent">
+                            <ul>
+                                <li>General body text:
+                                    https://www.thestrad.com/video/making-a-cello-from-start-to-finish/3672.article</li>
+                                <li>The Wood: Wood cards - Adobe Stock; Popup images (in order) - Luthier Vidal,
+                                    Kology Violins, LiViolinShop.com
+                                </li>
+                                <li>Shaping the Body: Body cards -
+                                    https://www.thestrad.com/video/making-a-cello-from-start-to-finish/3672.article;
+                                    Popup images (in order) -
+                                    https://aeon.co/videos/forging-a-cello-from-pieces-of-wood-demands-its-own-form-of-virtuosity,
+                                    SF Gate, Benning Violins</li>
+                                <li>The Varnishing Process: Oil-based varnish - Aileen Music Co.; Spirit-based varnish -
+                                    sinomusic.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="home">Home</button>
+                    <button class="prev">Previous</button>
+                    <p class="attribution">Background photo courtesy of K&M Music School</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

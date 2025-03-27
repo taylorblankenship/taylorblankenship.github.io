@@ -1,0 +1,658 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    /* Outside Code Source: https://www.youtube.com/watch?v=uV8kH5RgSZU */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    /* End */
+}
+
+section{
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* Outside Code Source: https://www.youtube.com/watch?v=uV8kH5RgSZU */
+    scroll-snap-align: start; 
+    transition: transform 0.5 ease;
+    /* End */
+}
+
+
+h1{
+    font-family: 'Yeseva One', serif;
+}
+
+#one{
+    background-color: #2e0a05;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#one p{
+    margin-top: 20px;
+    color: #d0dfe4;
+}
+
+.arrowImg {
+    margin-top: 40px;
+}
+
+.two{
+    background-color: #d0dfe4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 0;
+}
+
+.two h1{
+    color: #33575b;
+    font-size: 80px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+}
+
+.two p{
+    color: #2e0a05;
+    text-align: center;
+    font-size: 30px;
+}
+
+.coffeeSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 960px;
+    margin: 0 0;
+}
+
+.coffeeBox{
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coffeeBox img {
+    width: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    height: auto;
+}
+
+#three{
+    background-color: #ecc78d;
+}
+
+#four{
+    background-color: #33575b;
+}
+
+#five{
+    background-color: #ecc78d;
+}
+
+#six{
+    background-color: #33575b;
+}
+
+#seven{
+    background-color: #ecc78d;
+}
+
+#eight{
+    background-color: #33575b;
+}
+
+#nine{
+    background-color: #d0dfe4;
+}
+
+#three p{
+    color: #2e0a05;
+}
+
+#three h1{
+    color: #2e0a05;
+}
+
+#five p{
+    color: #2e0a05;
+}
+
+#five h1{
+    color: #2e0a05;
+}
+
+#seven p{
+    color: #2e0a05;
+}
+
+#seven h1{
+    color: #2e0a05;
+}
+
+.nine{
+    background-color:  #d0dfe4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.nine h1{
+    color: #33575b;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.nine p{
+    color: #2e0a05;
+    text-align: center;
+    font-size: 30px;
+}
+
+.nine .openButton {
+    background-color: #33575b;
+    color: white
+} 
+
+#three .openButton {
+    background-color: #33575b;
+    color: white;
+} 
+
+#three .openButton:hover{
+    background-color: white;
+    color:#33575b;
+} 
+
+#five .openButton {
+    background-color: #33575b;
+    color: white;
+} 
+
+#five .openButton:hover{
+    background-color: white;
+    color:#33575b;
+} 
+
+#seven .openButton {
+    background-color: #33575b;
+    color: white;
+} 
+
+#seven .openButton:hover{
+    background-color: white;
+    color:#33575b;
+} 
+
+.nine .openButton:hover{
+    background-color: white;
+    color: #33575b;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.openButton {
+    background-color: #d0dfe4;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #2e0a05;
+    width: 200px;
+}
+
+.openButton:hover{
+    background-color: white;
+}
+
+.modalBackground{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+    background-color: #2e0a05;
+    width: 500px;
+    height: 400px;
+}
+
+.modalHeader{
+    display: flex;
+    justify-content: end;
+}
+
+.closeButton{
+    margin: 20px 20px;
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 100px;
+    gap: 30px;
+}
+
+.content h1{
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-style: italic;
+}
+
+.buttonContain {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.contentWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.textSection {
+    padding-right: 20px;
+}
+
+.imageSection {
+    display: flex;
+    justify-content: flex-end;
+}
+.recipeImg {
+    height: 100vh;
+    width: 600px;
+}
+
+.contentWrapReverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+}
+
+.backButtonContain {
+    margin-top: 20px;
+}
+
+.backButton {
+    color: #2e0a05;
+    padding: 10px 1px;
+    font-size: 20px;
+}
+
+.backButton:hover {
+    color: #33575b;
+}
+
+#four .backButton {
+    color: white;
+}
+
+#four .backButton:hover {
+    color: #d0dfe4;
+}
+
+#six .backButton {
+    color: white;
+}
+
+#six .backButton:hover {
+    color: #d0dfe4;
+}
+
+#eight .backButton {
+    color: white;
+}
+
+#eight .backButton:hover {
+    color: #d0dfe4;
+}
+
+#nine .backButtonContain {
+    margin-top: 60px;
+}
+
+.sourcesLinkContain {
+    margin-top: 60px;
+}
+
+.sourcesLink {
+    color: #2e0a05;
+    padding: 10px 1px;
+    font-size: 20px;
+}
+
+.sourcesLink:hover {
+    color: #33575b;
+}
+
+.modalContent{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.modalContent h3{
+    font-family: 'Yeseva One', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.modalContent li{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.modalContent p{
+    color: white !important; /*I would never use this but I tried for hours using so many methods to get the text to be white. Not sure where my error is but hopefully you will excuse this one use since it is only one. :)*/
+    font-size: 25px;
+}
+
+.nine .modal{
+    background-color: #2e0a05;
+    width: 500px;
+    height: 550px;
+}
+
+#one h1{
+    font-size: 90px;
+}
+
+
+
+    @media (max-width: 800px) {
+        *{
+            overflow-x: hidden;
+        }
+
+        #one, #two, #three, #four, #five, #six, #seven, #eight, #nine .content{
+            height: fit-content; /* found this while searching through heigh options */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #one h1, #nine h1, .content h1{
+            width: 100%;
+            font-size: 40px; 
+            margin: 0 auto;
+        }
+
+        #one p, #nine p, .content p{
+            width: 100%;
+            font-size: 20px; 
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .buttonContain {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .openButton, .backButton {
+            width: 100%;            
+            max-width: 320px;       
+            padding: 10px;
+            font-size: 20px;
+            color: #2e0a05;
+            margin-top: 10px;       
+            text-align: center;
+        }
+    
+        .imageSection {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+       .imageSection img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+    
+        #one .arrowImg {
+            margin-top: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        #recipeImg {
+            width: 100%; 
+            max-width: 320px; 
+            height: auto;
+            order: -1;  /* https://www.w3schools.com/cssref/css3_pr_order.php */
+        }
+
+        .textSection, #nine h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .contentWrap {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+    
+        .contentWrapReverse {
+            flex-direction: column-reverse;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .modal{
+            width: 290px;
+        }
+        .modalContent li{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .coffeeBox img{
+            width: 120px;
+        }
+
+        .backButton{
+            padding: 0;
+        }
+
+        .sourcesLink{
+            padding: 0;
+        }
+
+        .buttonContain{
+            justify-content: center;
+        }
+
+        .openButton {
+            width: 305px;
+            padding: 15px;
+            margin: 20px;
+        }
+
+        .closeButton{
+            font-size: 50px;
+        }
+    }
+
+    @media (min-width: 801px) and (max-width: 1400px) {
+        *{
+            overflow-x: hidden;
+        }
+
+        #one, #two, #three, #four, #five, #six, #seven, #eight, #nine .content{
+            height: 100%; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #one h1, #nine h1, .content h1{
+            width: 100%;
+            font-size: 60px; 
+            margin: 0 auto;
+        }
+
+        #one p, #nine p, .content p{
+            width: 100%;
+            font-size: 30px; 
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #two h1{
+            font-size: 60px;
+        }
+
+        #two p{
+            font-size: 30px;
+        }
+
+
+        .coffeeBox img {
+            width: 100px;
+        }
+
+        .buttonContain {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .openButton, .backButton {
+            width: 100%;            
+            max-width: 320px;       
+            padding: 10px;
+            font-size: 20px;
+            color: #2e0a05;
+            margin-top: 10px;       
+            text-align: center;
+        }
+    
+        .imageSection {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+       .imageSection img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+    
+        #one .arrowImg {
+            margin-top: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        #recipeImg {
+            width: 100%; 
+            max-width: 600px; 
+            height: auto;
+        }
+
+        .textSection, #nine h1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .coffeeSelection {
+            gap: 10px;
+        }
+
+        .coffeeBox {
+            width: 200px;
+            height: 200px;
+        }
+        .openButton {
+            width: 320px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .closeButton{
+            font-size: 50px;
+        }
+
+    }

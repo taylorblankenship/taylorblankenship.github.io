@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Rubik:ital,wght@0,700;1,700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="content" id="one">
+            <div class="contentWrapReverse">
+                <div class="textSection">
+                    <h1>Discover the World of Coffee ☕</h1>
+                    <p class="desc">Welcome to our Coffee Explorer, where you can journey through the rich history and
+                        variety of
+                        your favorite brews. </p>
+                    <a href="#two">
+                        <img src="downarrow.png" alt="DownArrow" class="arrowImg" width="100px"> </a>
+                </div>
+                <div class="imageSection">
+                    <img src="beans.jpeg" alt="Bunch of coffees" class="recipeImg">
+                </div>
+            </div>
+        </section>
+
+        <section class="two" id="two">
+            <h1>Choose Your Coffee Type</h1>
+            <p>Start your exploration by selecting your favorite coffee style! Click on a coffee to jump to its recipe,
+                history, and a fun fact that makes it unique.</p>
+            <div class="coffeeSelection">
+                <div class="coffeeBox">
+                    <a href="#three"><img src="latte.png" alt="Latte" class="coffee-img"></a>
+                    <p>Latte</p>
+                </div>
+                <div class="coffeeBox">
+                    <a href="#four"><img src="americano.png" alt="Americano" class="coffee-img"></a>
+                    <p>Americano</p>
+                </div>
+                <div class="coffeeBox">
+                    <a href="#five"><img src="cappuccino.png" alt="Cappuccino" class="coffee-img"></a>
+                    <p>Cappuccino</p>
+                </div>
+                <div class="coffeeBox">
+                    <a href="#six"><img src="coldbrew.png" alt="Cold Brew" class="coffee-img"></a>
+                    <p>Cold Brew</p>
+                </div>
+                <div class="coffeeBox">
+                    <a href="#seven"><img src="mocha.png" alt="Mocha" class="coffee-img"></a>
+                    <p>Mocha</p>
+                </div>
+                <div class="coffeeBox">
+                    <a href="#eight"><img src="frappe.png" alt="Frappuccino" class="coffee-img"></a>
+                    <p>Frappuccino</p>
+                </div>
+                <div class="sourcesLinkContain">
+                    <a href="#nine" class="sourcesLink">Go to Sources Page</a>
+                </div>
+            </div>
+        </section>
+        <section class="content" id="three">
+            <div class="contentWrap">
+                <div class="textSection">
+                    <h1>Latte</h1>
+                    <p class="desc">Smooth, creamy, and the perfect balance between coffee and milk.</p>
+                    <p>The latte's history goes back to the 17th century, but it became popular in America in
+                        the
+                        1980s. The
+                        drink’s smooth texture comes from the blend of espresso and steamed milk, offering a
+                        less
+                        intense
+                        coffee
+                        experience.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('latteRecipe')" class="openButton">Recipe</button>
+                        <div id='latteRecipe' class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('latteRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>1 shot of espresso</li>
+                                        <li>Steamed milk (about 6 oz)</li>
+                                        <li>A thin layer of milk foam</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('latteFunFact')" class="openButton">Fun Fact</button>
+                        <div id="latteFunFact" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('latteFunFact')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>In Italy, ordering a "latte" will just get you a glass of milk! To order
+                                        a true
+                                        latte, ask for a "caffè latte."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makelatte.jpg" alt="Latte" class="recipeImg">
+                </div>
+            </div>
+        </section>
+        <section class="content" id="four">
+            <div class="contentWrapReverse">
+                <div class="textSection">
+                    <h1>Americano</h1>
+                    <p class="desc">Simple, strong, and bold.</p>
+                    <p>Americano was created by American soldiers during World War II in Italy. They would dilute
+                        espresso with
+                        hot water to replicate the milder coffee they were used to back home.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('americanoRecipe')" class="openButton">Recipe</button>
+                        <div id="americanoRecipe" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('americanoRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>1-2 shots of espresso</li>
+                                        <li>Hot water (about 6-8 oz)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('americanoFunFact')" class="openButton">Fun Fact</button>
+                        <div id="americanoFunFact" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('americanoFunFact')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>The Americano’s full name is "Caffè Americano," but it's simply a diluted
+                                        espresso, not to be confused with drip coffee!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makeamericano.jpg" alt="Americano" class="recipeImg">
+                </div>
+        </section>
+        <section class="content" id="five">
+            <div class="contentWrap">
+                <div class="textSection">
+                    <h1>Cappuccino</h1>
+                    <p class="desc">Velvety, foamy, and perfect for mornings.</p>
+                    <p>Cappuccino's roots trace back to Vienna, Austria, but the drink became popular in Italy in the
+                        1900s. The
+                        signature foam topping was introduced as a way to soften the strong espresso flavor.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('cappRecipe')" class="openButton">Recipe</button>
+                        <div id="cappRecipe" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('cappRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>1 shot of espresso</li>
+                                        <li>Steamed milk (about 4 oz)</li>
+                                        <li>Milk foam (1 oz)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('cappFun')" class="openButton">Fun Fact</button>
+                        <div id="cappFun" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('cappFun')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>The foam on a cappuccino is thick enough that you can often draw art with it,
+                                        creating beautiful latte art!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makeCapp.webp" alt="Cappuccino" class="recipeImg">
+                </div>
+        </section>
+        <section class="content" id="six">
+            <div class="contentWrapReverse">
+                <div class="textSection">
+                    <h1>Cold Brew</h1>
+                    <p class="desc">Chilled and refreshing, perfect for summer.</p>
+                    <p>Cold brew coffee dates back to Japan in the 1600s, where it was known as "Kyoto-style" coffee. It
+                        gained
+                        modern popularity in the U.S. in the 2010s for its smooth, less acidic taste.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('coldbrewRecipe')" class="openButton">Recipe</button>
+                        <div id="coldbrewRecipe" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('coldbrewRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>Coarse ground coffee (1:4 ratio of coffee to water)</li>
+                                        <li>Steeped for 12-24 hours in cold water</li>
+                                        <li>Strain and serve over ice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('coldbrewFun')" class="openButton">Fun Fact</button>
+                        <div id="coldbrewFun" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('coldbrewFun')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>Cold brew is up to 67% less acidic than hot-brewed coffee, making it gentler on
+                                        the stomach!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makeColdBrew.jpg" alt="Cold Brew" class="recipeImg">
+                </div>
+        </section>
+        <section class="content" id="seven">
+            <div class="contentWrap">
+                <div class="textSection">
+                    <h1>Mocha</h1>
+                    <p class="desc">A decadent blend of coffee and chocolate.</p>
+                    <p>Named after the city of Mocha in Yemen, this drink has roots in the ancient coffee trade. The
+                        combination
+                        of chocolate and coffee became widely popular in Europe and the U.S. in the 20th century.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('mochaRecipe')" class="openButton">Recipe</button>
+                        <div id="mochaRecipe" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('mochaRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>1 shot of espresso</li>
+                                        <li>2 oz of chocolate syrup or cocoa powder</li>
+                                        <li>Steamed milk (about 6 oz)</li>
+                                        <li>Whipped cream (optional)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('mochaFun')" class="openButton">Fun Fact</button>
+                        <div id="mochaFun" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('mochaFun')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>Mocha was originally a coffee bean variety, known for its naturally chocolatey
+                                        flavor, before becoming synonymous with the chocolate-coffee combination.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makemocha.webp" alt="Mocha" class="recipeImg">
+                </div>
+        </section>
+        <section class="content" id="eight">
+            <div class="contentWrapReverse">
+                <div class="textSection">
+                    <h1>Frappuccino</h1>
+                    <p class="desc">A sweet, icy blend of coffee and cream—perfect for a cool, refreshing treat.</p>
+                    <p>The Frappuccino was invented by Starbucks in 1995. It quickly became a favorite for coffee
+                        drinkers who
+                        craved a dessert-like treat with the kick of coffee. While many associate it with Starbucks, the
+                        drink
+                        has since inspired variations across different coffee shops.</p>
+                    <div class="buttonContain">
+                        <button onclick="openModal('frappRecipe')" class="openButton">Recipe</button>
+                        <div id="frappRecipe" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('frappRecipe')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Recipe:</h3>
+                                    <ul>
+                                        <li>1 shot of espresso or brewed coffee (chilled)</li>
+                                        <li>Ice (about 1 cup)</li>
+                                        <li>Milk (about 1/2 cup)</li>
+                                        <li>2 tablespoons of sugar or sweetener</li>
+                                        <li>Optional: Whipped cream, chocolate or caramel drizzle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="openModal('frappFun')" class="openButton">Fun Fact</button>
+                        <div id="frappFun" class="modalBackground">
+                            <div class="modal">
+                                <div class="modalHeader">
+                                    <button onclick="closeModal('frappFun')" class="closeButton">X</button>
+                                </div>
+                                <div class="modalContent">
+                                    <h3>Fun Fact</h3>
+                                    <p>Frappuccinos are often served with whipped cream on top, turning this icy drink
+                                        into a full-on dessert!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backButtonContain">
+                        <a href="#two" class="backButton">Back to Selector</a>
+                    </div>
+                </div>
+                <div class="imageSection">
+                    <img src="makeFrapp.jpg" alt="Frappe" class="recipeImg">
+                </div>
+        </section>
+        <section class="nine" id="nine">
+            <h1>Sources</h1>
+            <p>The references listed below include all the works cited or consulted in the preparation of this
+                document. All sources are credited to ensure proper attribution of ideas, facts, and quotes.</p>
+            <div class="buttonContain">
+                <button onclick="openModal('imageSources')" class="openButton">Images</button>
+                <div id="imageSources" class="modalBackground">
+                    <div class="modal">
+                        <div class="modalHeader">
+                            <button onclick="closeModal('imageSources')" class="closeButton">X</button>
+                        </div>
+                        <div class="modalContent">
+                            <h3>Image Sources:</h3>
+                            <ul>
+                                <li><a href="https://www.freepik.com/free-photo/assorted-several-coffee-cups_11307117.htm#fromView=search&page=1&position=12&uuid=ad91bc98-e5ce-4bfa-9c6b-fe1fabf1ae5e"
+                                        target="_blank">Freepik</a></li>
+                                <li><a href="https://gemini.google.com/app?is_sa=1&is_sa=1&android-min-version=301356232&ios-min-version=322.0&campaign_id=bkws&utm_source=sem&utm_source=google&utm_medium=paid-media&utm_medium=cpc&utm_campaign=bkws&utm_campaign=2024enUS_gemfeb&pt=9008&mt=8&ct=p-growth-sem-bkws&gad_source=1&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7qGLvc3HLzym3ruodr_CcMT_3RqWUJB8zKbSFKIN-mhvRS73zX0oEsaAtFjEALw_wcB&gclsrc=aw.ds"
+                                        target="_blank">Google Gemini</a></li>
+                                <li><a href="https://emojis.sh/" target="_blank">AI Emojis</a></li>
+                                <li><a href="https://emilylaurae.com/iced-americano/" target="_blank">Emily Laurae</a>
+                                </li>
+                                <li><a href="https://www.smells-like-home.com/2020/03/how-to-make-a-latte-at-home/"
+                                        target="_blank">Smells like Home</a></li>
+                                <li><a href="https://www.acouplecooks.com/mocha-cappuccino/" target="_blank">A Couple
+                                        Cooks</a></li>
+                                <li><a href="https://midwestniceblog.com/vanilla-sweet-cream-cold-brew/"
+                                        target="_blank">Midwest Nice</a></li>
+                                <li><a href="https://www.butteredsideupblog.com/how-to-make-mocha-his-and-hers/"
+                                        target="_blank">Buttered Side Up</a></li>
+                                <li><a href="https://wowitsveggie.com/vegan-chai-frappuccino/" target="_blank">Wow, It's
+                                        Veggie?!</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="openModal('textSource')" class="openButton">Text</button>
+                <div id="textSource" class="modalBackground">
+                    <div class="modal">
+                        <div class="modalHeader">
+                            <button onclick="closeModal('textSource')" class="closeButton">X</button>
+                        </div>
+                        <div class="modalContent">
+                            <h3>Text Source</h3>
+                            <p>The content of this document was generated with the assistance of ChatGPT, an AI
+                                language model developed by OpenAI. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="backButtonContain">
+                <a href="#two" class="backButton">Back to Selector</a>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
