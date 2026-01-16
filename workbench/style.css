@@ -1,0 +1,75 @@
+/* 
+#4a4a4a charcoal
+#4a4a4a8a semi-transparent charcoal
+#f4f4f4 cream
+#c16944 burnt orange
+#002d04 forest green
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  background: #f4f4f4;
+  font-family: "Zalando Sans", sans-serif;
+  color: #4a4a4a;
+  margin: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  padding: 10px 20px;
+  border-bottom: 3px solid #4a4a4a8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav div a {
+  color: #4a4a4a;
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration-color: #c16944;
+  text-decoration-thickness: 0.2em;
+  text-underline-offset: 1.5px;
+}
+
+.logo {
+  height: 100px;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-family: "Zalando Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+  color: #4a4a4a;
+  font-size: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.orange {
+  color: #c16944;
+}
+
+footer {
+  padding: 10px 20px;
+  border-top: 3px solid #4a4a4a8a;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
